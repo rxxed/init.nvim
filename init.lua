@@ -4,5 +4,3 @@ require('options')
 require('custom')
 require('keybinds')
 require('config.lazy')
-
--- TODO: git
