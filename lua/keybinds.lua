@@ -1,4 +1,5 @@
-vim.keymap.set('n', '<leader>.', OpenLF)
+-- vim.keymap.set('n', '<leader>.', OpenLF)
+vim.keymap.set('n', '<leader>.', '<cmd>:Oil<CR>')
 vim.keymap.set('n', '<leader>cc', '<cmd>:source %<CR>')
 vim.keymap.set('n', '<leader>bk', '<cmd>:bdelete<CR>')
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
