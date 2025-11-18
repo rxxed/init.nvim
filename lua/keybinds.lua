@@ -1,5 +1,4 @@
 -- vim.keymap.set('n', '<leader>.', OpenLF)
-vim.keymap.set('n', '<leader>.', '<cmd>:Oil<CR>')
 vim.keymap.set('n', '<leader>cc', '<cmd>:source %<CR>')
 vim.keymap.set('n', '<leader>bk', '<cmd>:bdelete<CR>')
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
@@ -8,3 +7,4 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('i', '{<CR>', '{<CR>}<Esc>ko')
+vim.keymap.set('n', '<leader>R', '<cmd>e %<CR>')

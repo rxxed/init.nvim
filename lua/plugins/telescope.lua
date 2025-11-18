@@ -15,14 +15,15 @@ local function pathpicker(path)
 end
 
 vim.keymap.set('n', '<leader>sn', pathpicker(vim.fn.stdpath 'config'))
-vim.keymap.set( 'n', '<leader>ob', pathpicker(require('constants').obsidian_vault_path))
+vim.keymap.set('n', '<leader>ob', pathpicker(require('constants').obsidian_vault_path))
 
 return {
-  'nvim-telescope/telescope.nvim', tag = '0.1.8',
+  'nvim-telescope/telescope.nvim',
+  tag = '0.1.8',
   dependencies = { 'nvim-lua/plenary.nvim' },
   config = function()
-    require('telescope').setup{
-      defaults = require('telescope.themes').get_ivy{},
+    require('telescope').setup {
+      defaults = require('telescope.themes').get_ivy {},
     }
   end
 }

@@ -1,16 +1,20 @@
+local function theme_config() return function() vim.cmd.colorscheme("gruvbox") end end
+
 return {
   {
-    "zenbones-theme/zenbones.nvim",
-    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
-    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
-    -- In Vim, compat mode is turned on as Lush only works in Neovim.
-    dependencies = "rktjmp/lush.nvim",
-    lazy = false,
-    priority = 1000,
-    -- you can set set configuration options here
-    config = function()
-      vim.g.zenbones_darken_comments = 45
-      vim.cmd.colorscheme('forestbones')
-    end
+    "Shatur/neovim-ayu",
+    config = theme_config()
+  },
+  {
+    "nanotech/jellybeans.vim",
+    config = theme_config()
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+    config = theme_config()
+  },
+  {
+    "shaunsingh/nord.nvim",
+    config = theme_config()
   }
 }
